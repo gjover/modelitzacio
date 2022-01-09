@@ -1,0 +1,15 @@
+# conda env create -n rise -f environment.yml
+# conda env update --file environment.yml  --prune
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - matplotlib
+  - pandas
+  - sympy
+  - bokeh
+  - rise
+  - pip
+  - pip:
+    - jupyter-contrib-nbextensions
