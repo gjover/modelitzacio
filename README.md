@@ -26,8 +26,8 @@ Per qualsevol dubte o comentari, [obriu si us plau un issue a github][Issues]
 
 [Issues]: https://github.com/gjover/modelitzacio/issues
 [Issues_badge]: http://img.shields.io/github/issues/gjover/modelitzacio.svg
-[Binder]: https://mybinder.org/v2/gh/gjover/modelitzacio/main?filepath=notebooks%2Introduccio.ipynb
-[Binder_badge]: https://mybinder.org/badge.svg
+[Binder]: https://mybinder.org/v2/gh/gjover/modelitzacio.git/main?filepath=notebooks/Introduccio.ipynb
+[Binder_badge]: https://mybinder.org/badge_logo.svg
 [GPL3]: https://www.gnu.org/licenses/gpl-3.0
 [GPL3_badge]: https://img.shields.io/badge/License-GPLv3-blue.svg
 [GFDL]: https://www.gnu.org/licenses/fdl-1.3
