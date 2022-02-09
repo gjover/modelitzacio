@@ -9,6 +9,7 @@ dependencies:
   - matplotlib
   - pandas
   - sympy
+  - sklearn-pandas
   - bokeh
   - rise
   - pip
