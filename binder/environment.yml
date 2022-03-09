@@ -8,7 +8,7 @@ dependencies:
   - scipy
   - matplotlib
   - pandas
-  - sympy
+  - sympy=1.8
   - sklearn-pandas
   - bokeh
   - rise
