@@ -91,7 +91,13 @@
 
 # %% [markdown] slideshow={"slide_type": "notes"}
 # - Triarem factors que a priori afectaran més al resultat
+#   - Posteriorment analitzarem la sensibilitat del model
 # - En el cicle de modelització podem afegir o eliminar factors
+
+# %% [markdown] slideshow={"slide_type": "slide"}
+# ### Observem la realitat
+# - Documentar-se i cercar coneixements previs de sistemes similars
+# - Mesurar els factors, el seu canvi i com afecten uns als altres
 
 # %% [markdown] slideshow={"slide_type": "slide"}
 # ### Relacions, comportament i estats
