@@ -1,18 +1,25 @@
-# conda env create -n rise -f environment.yml
-# conda env update --file environment.yml  --prune
+# mamba env create -n rise -f environment.yml
+# mamba env update -n rise -f environment.yml  --prune
 channels:
   - conda-forge
 dependencies:
+  - conda
+  - mamba
   - python
   - numpy
   - scipy
+  - sage
   - matplotlib
   - pandas
   - sympy=1.8
   - sklearn-pandas
   - bokeh
+  - jinja2=3.0.3
+  - openssl
   - rise
   - pip
   - pip:
     - jupyter-contrib-nbextensions
-    - hide_code
+    - hide-code
+    - jupytext
+    - ipywidgets
