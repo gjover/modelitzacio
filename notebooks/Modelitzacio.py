@@ -22,10 +22,10 @@
 # - Amb aquest conjunt de factors identificats comencem la modelització
 # - És important prendre nota de les assumpcions que anem fent durant el procés de simulació per poder revisar-les a posteriori
 
-# %% [markdown] hideCode=false hidePrompt=false slideshow={"slide_type": "slide"}
-# ## Representació matemàtica de variables i relacions
-# - Podem representar la relació entre diferents factors en forma de gràfica, taula o fórmula.
-# - Analitzar dades del sistema com taules i gràfics ens pot ajudar a identificar comportaments típics
+# %% [markdown] hideCode=false hidePrompt=false slideshow={"slide_type": "notes"}
+# - Representació matemàtica de variables i relacions
+#   - Podem representar la relació entre diferents factors en forma de gràfica, taula o fórmula.
+#   - Analitzar dades del sistema com taules i gràfics ens pot ajudar a identificar comportaments típics
 
 # %% hideCode=false hideOutput=false hidePrompt=false slideshow={"slide_type": "skip"}
 import numpy as np
@@ -46,6 +46,54 @@ def show(*args):
     display(Math(out))
     
 qq = "\quad "
+
+# %% [markdown] slideshow={"slide_type": "slide"}
+# ### Modelant el canvi
+# - Identifica el patró de canvi
+# - Fes una assumpció sobre el seu comportament
+# - Expressa matemàticament una aproximació
+
+# %% [markdown] slideshow={"slide_type": "notes"}
+# - El canvi pot ser discret o continu
+# - Pot ser constant, proporcional a alguna variable o tindre un comportament característic
+# - Podem modelar-lo amb equacions de diferències, diferencials ...
+
+# %% [markdown] slideshow={"slide_type": "slide"}
+# ### Exemple: Cultiu de bacteris
+# - Tenim un cultiu de 100 organismes idèntics
+# - Quants individus hi tindrem d'ací a una hora? 
+# - Com modelitzem aquest comportament?
+
+# %% [markdown] slideshow={"slide_type": "fragment"}
+# - Assumim que:
+#     - Ritme de reproducció per individu és constant
+#     - La vida dels individus molt llarga
+#     - No interactuen
+#     - No estan limitats pels recursos
+
+# %% [markdown] slideshow={"slide_type": "slide"}
+# - Caracteritzem el canvi:
+# $$
+# \begin{align}
+# P_{n+1} & = P_n + \Delta P \\
+# \Delta P & = P_{n+1} - P_n \\
+# \Delta P & = 8 * P_n \\
+# \end{align}
+# $$
+
+# %% [markdown] slideshow={"slide_type": "subslide"}
+# - En forma diferencial seria de la forma:
+# $$P'(t)=aP(t)$$
+# - Si resolem, tindrà un comportament exponencial
+# $$
+# \begin{align}
+# P(t) & = P_0 \,e^{a t} \\
+# P'(t) & = a \,P_0 \,e^{a t} = a \, P(t) \\
+# \end{align}
+# $$
+
+# %% [markdown] slideshow={"slide_type": "fragment"}
+# Nota: Podríem tindre una població intoxicada amb una taxa de morts elevada i tindre una evolució purament de morts
 
 # %% [markdown] hideCode=false hidePrompt=false slideshow={"slide_type": "slide"}
 # ### Comportaments típics
@@ -180,26 +228,6 @@ plt.show()
 # %% [markdown] hideCode=false hidePrompt=false slideshow={"slide_type": "fragment"}
 # - Distribució de probabilitat de variable continua
 # - Representació de distribució aleatòria d'esdeveniments
-
-# %% [markdown] slideshow={"slide_type": "slide"}
-# ### Exemple: Cultiu de bacteris
-# - Tenim un cultiu de 100 organismes idèntics
-# - Assumim que:
-#     - Ritme de reproducció per individu és constant ($8 s^{-1}$)
-#     - La vida dels individus molt llarga
-#     - No interactuen
-#     - No estan limitats pels recursos
-# - Quants individus hi tindrem d'ací una hora? 
-# - Com modelitzem aquest comportament?
-
-# %% [markdown] slideshow={"slide_type": "subslide"}
-# - Es tracta d'una **evolució purament per naixements** 
-# $$P'(t)=aP(t)$$
-# - Té un comportament de creixement exponencial
-# $$f(t) = f_0 \,e^{a t} = 100 \,e^{8 t}$$
-
-# %% [markdown] slideshow={"slide_type": "fragment"}
-# Nota: Podríem tindre una població intoxicada amb una taxa de morts elevada i tindre una evolució purament de morts
 
 # %% [markdown] hideCode=false hidePrompt=false slideshow={"slide_type": "slide"}
 # ### Combinació de l'expressió matemàtica
