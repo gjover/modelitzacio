@@ -6,7 +6,7 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.3'
-#       jupytext_version: 1.14.0
+#       jupytext_version: 1.14.4
 #   kernelspec:
 #     display_name: Python 3 (ipykernel)
 #     language: python
@@ -15,7 +15,7 @@
 
 # %% [markdown] slideshow={"slide_type": "slide"}
 # ## Exemple 2
-# ### Disolució
+# ### Dissolució
 #
 # [<center><img src=./static/Water_Tank.jpg width=50%></center>](#img_Water_Tank)
 
