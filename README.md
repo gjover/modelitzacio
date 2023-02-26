@@ -26,7 +26,7 @@ Per qualsevol dubte o comentari, [obriu si us plau un issue a github][Issues]
 
 [Issues]: https://github.com/gjover/modelitzacio/issues
 [Issues_badge]: http://img.shields.io/github/issues/gjover/modelitzacio.svg
-[Binder]: https://mybinder.org/v2/gh/gjover/modelitzacio.git/main?filepath=notebooks
+[Binder]: https://mybinder.org/v2/gh/gjover/modelitzacio.git/main?filepath=notebooks/Index.py
 [Binder_badge]: https://mybinder.org/badge_logo.svg
 [GPL3]: https://www.gnu.org/licenses/gpl-3.0
 [GPL3_badge]: https://img.shields.io/badge/License-GPLv3-blue.svg
