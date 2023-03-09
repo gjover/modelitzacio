@@ -24,7 +24,7 @@
 # - [Modelització](Modelitzacio.py)
 # - [Exemple 2](Exemple02.py) Dissolució
 # - [Anàlisi d'incerteses](Analisi_d_incerteses.py)
-# - [Exemple 3]()
+# - [Exemple 3](Exemple03.py) Transmissòmetre
 # - [Validació i verificació](Validacio_i_verificacio.py)
 # - [Exemple 4]()
 # - [Plantilla 5](Plantilla05.py) Una teulada per un canaló
