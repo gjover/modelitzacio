@@ -163,10 +163,11 @@ show(
 #         - La velocitat relativa de la pluja depèn de la nostra velocitat
 
 # %% slideshow={"slide_type": "subslide"}
+I = flux / u
+
 Ss = x * y
 Vs = I * t * u * cos(theta) * Ss
 
-I = flux / u
 Sf = x * z
 Vf = I * t * (u * sin(theta) + v) * Sf
 
