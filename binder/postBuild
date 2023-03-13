@@ -3,3 +3,5 @@ jupyter nbextension install --py hide_code --sys-prefix
 jupyter nbextension enable splitcell/splitcell
 jupyter nbextension enable --py hide_code
 jupyter serverextension enable --py hide_code
+jupyter nbextension install --py jupytext --user
+jupyter nbextension enable --py jupytext --user
