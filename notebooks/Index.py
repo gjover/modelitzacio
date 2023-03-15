@@ -18,15 +18,15 @@
 #
 # ## Index
 #
-# - [Introducció](Introduccio.py)
-# - [Anàlisi del sistema](Analisi_del_sistema.py)
-# - [Exemple 1](Exemple01.py) Plou a bots i barrals
-# - [Modelització](Modelitzacio.py)
-# - [Exemple 2](Exemple02.py) Dissolució
-# - [Anàlisi d'incerteses](Analisi_d_incerteses.py)
-# - [Exemple 3](Exemple03.py) Transmissòmetre
-# - [Validació i verificació](Validacio_i_verificacio.py)
+# - [Introducció](Introduccio.ipynb)
+# - [Anàlisi del sistema](Analisi_del_sistema.ipynb)
+# - [Exemple 1](Exemple01.ipynb) Plou a bots i barrals
+# - [Modelització](Modelitzacio.ipynb)
+# - [Exemple 2](Exemple02.ipynb) Dissolució
+# - [Anàlisi d'incerteses](Analisi_d_incerteses.ipynb)
+# - [Exemple 3](Exemple03.ipynb) Transmissòmetre
+# - [Validació i verificació](Validacio_i_verificacio.ipynb)
 # - [Exemple 4]()
-# - [Plantilla 5](Plantilla05.py) Una teulada per un canaló
+# - [Plantilla 5](Plantilla05.ipynb) Una teulada per un canaló
 # - [Plantilla 6]()
 #
