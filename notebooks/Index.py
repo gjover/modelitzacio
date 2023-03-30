@@ -1,7 +1,7 @@
 # ---
 # jupyter:
 #   jupytext:
-#     formats: py:percent
+#     formats: ipynb,py:percent
 #     text_representation:
 #       extension: .py
 #       format_name: percent
@@ -28,5 +28,5 @@
 # - [Validació i verificació](Validacio_i_verificacio.ipynb)
 # - [Exemple 4]()
 # - [Plantilla 5](Plantilla05.ipynb) Una teulada per un canaló
-# - [Plantilla 6]()
+# - [Plantilla 6](Plantilla06.ipynb) Gestió de residus
 #
