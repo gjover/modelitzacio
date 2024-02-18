@@ -126,11 +126,11 @@ for x in X:
         
     Y.append(xt.subs(valors).subs(t, x-x0))
 
-#fig, ax = plt.subplots()
-#ax.plot(X, Y)
-#ax.semilogy(X, Y)
-#ax.legend(['$x(t)$'])
-#ax.set_xlabel('t')
+fig, ax = plt.subplots()
+ax.plot(X, Y)
+ax.semilogy(X, Y)
+ax.legend(['$x(t)$'])
+ax.set_xlabel('t')
 
 plt.show()
 
