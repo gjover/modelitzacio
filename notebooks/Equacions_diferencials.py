@@ -14,15 +14,14 @@
 # ---
 
 # %% [markdown] hideCode=false hidePrompt=false slideshow={"slide_type": "slide"}
-# # Interpretació d'equacions diferencials
+# # Equacions diferencials autònomes
 
 # %% [markdown] hideCode=false hidePrompt=false slideshow={"slide_type": "slide"}
-# ### Equacions diferencials
-#
-# - Molts cops ens trobarem equacions de la forma
+# - Molts cops podrem reduir el nostre sistema en la forma:
 #     $$\frac{dy}{dx} = g(x, y)$$
-# - Les solucions són sensibles  a les condicions inicials $y(x_0) = y_0$
-# - Interpretant y' = g(c, y) com el pendent de la trajectòria del sistema 
+# - Quan les equacions diferencials només depenen dels valors dels paràmetres depenents diem que son Equacions diferencials autònomes.
+# - L'evolució del sistema depen de les condicions en que es troba a cada instant $y(x_0) = y_0$
+# - Interpretant y' = g(x, y) com el pendent de la trajectòria del sistema 
 # - podem analitzar gràficament el comportament del sistema representant el camp vectorial
 # - En aquests gràfics podem identificar regions estables, inestables i tendències del sistema
 
@@ -57,9 +56,8 @@ x, y = np.meshgrid(np.linspace(-5, 5, 10),
 yp = -2 * x * y / (1 + x**2)
 
 # Vectors directors
-nor = np.sqrt(yp**2 + 1)
-u = 1/nor 
-v = yp/nor
+v = -2 * x * y
+u = (1 + x**2)
 
 # Streamline
 plt.streamplot(x,y,u,v, density=[0.5, 1])
@@ -87,6 +85,23 @@ plt.show()
 # %%
 # Meshgrid 
 x, y = np.meshgrid(np.linspace(0, 5, 10),  
+                   np.linspace(0, 5, 10)) 
+
+# Pendent
+yp = -(1 - x/2) * y / (1 - y/2) / x
+
+# Vectors directors
+v = -(1 - x/2) * y
+u = (1 - y/2) * x
+
+# Streamline
+plt.streamplot(x,y,u,v, density=[0.5, 1])
+plt.title('y\' = -(1 - x/2) * y / (1 - y/2) / x')
+plt.show()
+
+# %%
+# Meshgrid 
+x, y = np.meshgrid(np.linspace(0, 5, 10),  
                    np.linspace(-0.5, 1.5, 10)) 
 
 # Pendent
@@ -107,11 +122,10 @@ plt.show()
 # - Podem trobar zones que no tenen sentit per al nostre sistema.
 
 # %% [markdown]
-# ### Equacions diferencials autònomes
+# ### Interpretació d'equacions diferencials
 #
-# - Les equacions diferencials de la forma 
+# - Si tenim una equació diferencial de la forma
 #     $$\frac{dy}{dx} = g(y)$$
-#   es denominen equacions diferencials autònomes.
 # - Analitzant els zeros de g(y) podem avaluar el comportament a les diferents regions .
 #
 # 1. Els punts y' = 0 seran punts d'equilibri
