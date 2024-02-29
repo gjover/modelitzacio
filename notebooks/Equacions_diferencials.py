@@ -19,8 +19,7 @@
 # %% [markdown] hideCode=false hidePrompt=false slideshow={"slide_type": "slide"}
 # - Molts cops podrem reduir el nostre sistema en la forma:
 #     $$\frac{dy}{dx} = g(x, y)$$
-# - Quan les equacions diferencials només depenen dels valors dels paràmetres depenents diem que son Equacions diferencials autònomes.
-# - L'evolució del sistema depen de les condicions en que es troba a cada instant $y(x_0) = y_0$
+# - Quan l'evolució del sistema nomé depen de les condicions en que es troba a cada instant $y(x_0) = y_0$ diem que son Equacions diferencials autònomes.
 # - Interpretant y' = g(x, y) com el pendent de la trajectòria del sistema 
 # - podem analitzar gràficament el comportament del sistema representant el camp vectorial
 # - En aquests gràfics podem identificar regions estables, inestables i tendències del sistema
