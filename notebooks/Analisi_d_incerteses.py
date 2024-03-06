@@ -180,7 +180,10 @@ l = plt.plot([2, 2], [0, 10000], [0.6, 2.6], [5000, 5000], "r")
 #     - Assignem distribucions a cada incertesa (sistemàtica o estadística)
 #     - Calculem $r$ assignant valors aleatoris amb les distribucions assignades
 #     - Extraem $u_c$ de les distribucions de valors obtinguts
-#     $$X_i = X_{real\,i} + \epsilon_{Xi} + \beta_{1i} + \beta_{2i}$$
+#     
+# $$
+# X_i = X_{real\,i} + \epsilon_{Xi} + \beta_{1i} + \beta_{2i}
+# $$
 
 # %% hideCode=true slideshow={"slide_type": "subslide"}
 x = np.random.normal(np.zeros(100000) + 1.6)
@@ -203,25 +206,30 @@ l = plt.hist(x, bins=40)
 
 # %% [markdown] slideshow={"slide_type": "subslide"}
 # - Expandint $r$ en series de Taylor obtenim:
-# $$r_k = r_{real} + \frac{\partial r}{\partial x}(x_k - x_{real}) 
+# $$
+# r_k = r_{real} + \frac{\partial r}{\partial x}(x_k - x_{real}) 
 #         + \frac{\partial r}{\partial y}(y_k - y_{real})
-#         + R_2$$
+#         + R_2
+# $$
 #         
 # - Com $(x_{real}, y_{real})$ són desconegudes les aproximem avaluant-les a $(x_k, y_k)$
 # - Sent $R_2$ la resta de termes de derivades segones i superiors
 
 # %% [markdown] slideshow={"slide_type": "subslide"}
-# $R_2 = \frac{1}{!2} \left[
+# $$
+# R_2 = \frac{1}{!2} \left[
 #         \frac{\partial^2 r}{\partial x^2}(x_k - x_{real})^2 
 #         + 2\frac{\partial^2 r}{\partial x \partial y}(x_k - x_{real})(y_k - y_{real})
 #         + \frac{\partial^2 r}{\partial y^2}(y_k - y_{real})^2 
-#         \right]$
+#         \right]
+# $$
+#
 # - Aquest terme serà negligible si:
 #     - les derivades avaluades entre $(x_{real}, y_{real})$ i $(x_k, y_k)$ són d'una magnitud raonable
 #     - els errors de $x$ i $y$ són petits
 
 # %% [markdown] slideshow={"slide_type": "subslide"}
-# - Sigui:
+# - Sigui: $ $
 #     - $\delta_{r_k}$ l'error total de $r$ a la mesura $k$
 #     - $\theta_x = \frac{\partial r}{\partial x}$ i $\theta_y = 
 #       \frac{\partial r}{\partial y}$
@@ -249,7 +257,7 @@ l = plt.hist(x, bins=40)
 # *(Assumint que no hi ha correlacions entre error sistemàtics i estadístics)*
 
 # %% [markdown] slideshow={"slide_type": "subslide"}
-# - Sigui:
+# - Sigui: $ $
 #     - $u_c^2$ l'estimació de la variància de la distribució d'errors totals
 #     - $b^2$ l'estimació de la variància de la distribució d'errors sistemàtics
 #     - $s^2$ l'estimació de la variància de la distribució d'errors estadístics
