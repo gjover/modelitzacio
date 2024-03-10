@@ -31,6 +31,32 @@
 # - Viscositat dinàmica $\mu = 1.2 \,mPa \cdot s$
 # - Llargària del tub $L = 1000 m$
 
+# %%
+import numpy as np
+import pandas as pd
+import scipy
+from scipy import stats
+import matplotlib.pyplot as plt
+from IPython.display import Math, display
+import sympy as sp
+from sympy.physics.units.systems import SI
+from sympy.physics.units import meter, second, liter, hour, degree, convert_to
+from sympy import sin, cos, pi, Abs
+
+sp.init_printing()
+
+def show(*args):
+    out = ""
+    for arg in args:
+        if isinstance(arg, (sp.Expr, sp.Eq)):
+            arg = sp.latex(arg)
+        else:
+            arg = str(arg)
+        out += arg
+    display(Math(out))
+    
+qq = "\quad "
+
 # %% slideshow={"slide_type": "subslide"}
 # Model
 from sympy.abc import rho, epsilon, mu, Q, L, d, f
