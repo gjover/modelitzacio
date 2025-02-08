@@ -45,15 +45,18 @@
 # ### Objectiu que es busca
 
 # %% [markdown] slideshow={"slide_type": "fragment"}
-# - Mesurable
-# - Raonable
-# - Útil
+# - **S**pecific
+# - **M**easurable
+# - **A**ssignable
+# - **R**ealistic
+# - **T**ime-bound
 
-# %% [markdown] slideshow={"slide_type": "notes"}
-# - Els resultats del model han d'estar vinculat a un **objectiu mesurable**
-# - Valorar si l'**abast de/dels objectius** és possible amb els **recursos** per modelitzar
-# - Tenir clar la utilitat dels objectius
-#     - E. Musk: First step: Make your requirements less dumb
+# %% [markdown]
+# - Específic: Sobre un aspecte molt concret i acotat.
+# - Mesurable: El nivell de millora ha de ser mesurable.
+# - Assignable: Les responsabilitats han d'estar ben definides.
+# - Realista: L'abast dels objectius ha de ser possible amb els recursos disponibles.
+# - Acotat temporalment: L'evolució temporal del desenvolupament i els resultats esperats ha d'estar ben definit.
 
 # %% [markdown] slideshow={"slide_type": "fragment"}
 # ### Precisió de l'estudi
@@ -97,7 +100,8 @@
 # %% [markdown] slideshow={"slide_type": "slide"}
 # ### Observem la realitat
 # - Documentar-se i cercar coneixements previs de sistemes similars
-# - Mesurar els factors, el seu canvi i com afecten uns als altres
+# - Cercar fonts de dades rellevants
+# - Mesurar els factors, el seu canvi i com afecten els uns als altres
 
 # %% [markdown] slideshow={"slide_type": "slide"}
 # ### Relacions, comportament i estats
