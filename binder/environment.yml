@@ -11,15 +11,16 @@ dependencies:
   - sage
   - matplotlib
   - pandas
-  - sympy=1.8
+  - sympy
+  - simpy
   - sklearn-pandas
   - bokeh
-  - jinja2=3.0.3
+  - jinja2
   - openssl
   - rise
   - pip
   - pip:
     - jupyter-contrib-nbextensions
     - hide-code
-    - jupytext==1.14.4
+    - jupytext
     - ipywidgets
